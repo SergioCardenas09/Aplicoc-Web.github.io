@@ -412,9 +412,8 @@
 
 
 
-                   <div class="fixed-button">
-    <button class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo1')" style="display: none;">Regresar a la Página Principal</button>
-</div>
+                    <button id="btnRegresar1" class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo1')" style="display: none;">Regresar a la Página Principal</button>
+
 
 
                 </div>
@@ -450,9 +449,10 @@
                 
                 
                 
-                    <div class="fixed-button">
-                        <button class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo2')">Regresar a la Página Principal</button>
-                    </div>
+                <div class="fixed-button">
+                    <button id="btnRegresar2" class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo2')" style="display: none;">Regresar a la Página Principal</button>
+                </div>
+                
                 </div>
                 <div id="contenido-nuevo3" style="display: none;">
                     <!-- Contenido nuevo para la opción 3 -->
@@ -634,9 +634,9 @@
 <br>
 <br>
 
-                    <div class="fixed-button">
-                        <button class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo3')">Regresar a la Página Principal</button>
-                    </div>
+<div class="fixed-button">
+    <button id="btnRegresar3" class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo3')" style="display: none;">Regresar a la Página Principal</button>
+</div>
                 </div>
             </div>
         </div>
@@ -645,32 +645,41 @@
     
     <script>
 function mostrarContenidoNuevo(idContenido) {
-            // Oculta el contenido inicial
-            document.getElementById("contenido-inicial").style.display = "none";
-            // Oculta el título "Seleccione una opción:"
-            document.querySelector("h2.text-center").style.display = "none";
-            // Oculta el título "APLICOC"
-            document.querySelector("h1.text-center").style.display = "none";
-            // Muestra el contenido nuevo correspondiente al ID
-            document.getElementById(idContenido).style.display = "block";
-            // Muestra el botón "Regresar a la Página Principal"
-            document.getElementById("btnRegresar").style.display = "block";
-        }
+    // Oculta el contenido inicial
+    document.getElementById("contenido-inicial").style.display = "none";
+    // Oculta el título "Seleccione una opción:"
+    document.querySelector("h2.text-center").style.display = "none";
+    // Oculta el título "APLICOC"
+    document.querySelector("h1.text-center").style.display = "none";
+    // Muestra el contenido nuevo correspondiente al ID
+    document.getElementById(idContenido).style.display = "block";
+    // Muestra el botón "Regresar a la Página Principal" correspondiente
+    if (idContenido === "contenido-nuevo1") {
+        document.getElementById("btnRegresar1").style.display = "block";
+    } else if (idContenido === "contenido-nuevo2") {
+        document.getElementById("btnRegresar2").style.display = "block";
+    } else if (idContenido === "contenido-nuevo3") {
+        document.getElementById("btnRegresar3").style.display = "block";
+    }
+}
 
-        function regresarPaginaPrincipal() {
-            // Oculta el contenido nuevo correspondiente al ID
-            document.getElementById("contenido-nuevo1").style.display = "none";
-            document.getElementById("contenido-nuevo2").style.display = "none";
-            document.getElementById("contenido-nuevo3").style.display = "none";
-            // Muestra el contenido inicial
-            document.getElementById("contenido-inicial").style.display = "block";
-            // Muestra nuevamente el título "Seleccione una opción:"
-            document.querySelector("h2.text-center").style.display = "block";
-            // Muestra nuevamente el título "APLICOC"
-            document.querySelector("h1.text-center").style.display = "block";
-            // Oculta el botón "Regresar a la Página Principal"
-            document.getElementById("btnRegresar").style.display = "none";
-        }
+function regresarPaginaPrincipal() {
+    // Oculta el contenido nuevo correspondiente al ID
+    document.getElementById("contenido-nuevo1").style.display = "none";
+    document.getElementById("contenido-nuevo2").style.display = "none";
+    document.getElementById("contenido-nuevo3").style.display = "none";
+    // Muestra el contenido inicial
+    document.getElementById("contenido-inicial").style.display = "block";
+    // Muestra nuevamente el título "Seleccione una opción:"
+    document.querySelector("h2.text-center").style.display = "block";
+    // Muestra nuevamente el título "APLICOC"
+    document.querySelector("h1.text-center").style.display = "block";
+    // Oculta el botón "Regresar a la Página Principal" correspondiente
+    document.getElementById("btnRegresar1").style.display = "none";
+    document.getElementById("btnRegresar2").style.display = "none";
+    document.getElementById("btnRegresar3").style.display = "none";
+}
+
     </script>
 
     </script>
