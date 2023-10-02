@@ -43,6 +43,43 @@
             --color: #126e12;
             --hover: #f55f23;
         }
+
+        .btn-uniforme2 {
+            width: 100%; /* Ancho al 100% para dispositivos pequeños */
+            max-width: 400px; /* Anchura máxima para evitar desbordamiento */
+            font-size: 18px; /* Tamaño de fuente deseado */
+        }
+        /* Centra los botones horizontalmente */
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+ .fixed-button {
+  position: fixed;
+      bottom: 20px;
+         right: 20px;
+         }
+                        
     </style>
 </head>
 <body>
@@ -66,6 +103,7 @@
                 <br>
                 <div id="contenido-nuevo1" style="display: none;">
                     <!-- Contenido nuevo para la opción 1 -->
+                    
                 <br>
                 <br>
                 <br>
@@ -116,281 +154,246 @@
                 <br>
                 <br>
                 <br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <br>
-                                <br>
-                                <center>
-                                    <h1>Paciente por primera vez</h1>
-                                </center>
-                                <br>
-                                <br>
-                                <center>
-                                    <h3 style="padding-top: 15px;">Documentación para la compra de la valoración o historia clínica.</h3>
-                                </center>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br><br>
+                            <center>
+                                <h1>Paciente por primera vez</h1>
+                            </center>
+                            <br><br>
+                            <center>
+                                <h3 style="padding-top: 15px;">Documentación para la compra de la valoración o historia clínica.</h3>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row" style="padding-top: 60px;">
+                    <div class="col-md-12">
+                        <ol>
+                            <li style="font-size: x-large;">Fotocopia de la cédula de ciudadanía</li><br>
+                            <li style="font-size: x-large;">Certificación Fosyga impresa (Con el fin de identificar el régimen de salud al que pertenece). Puede descargarlo ingresando al siguiente enlace: <a href="https://fosyga-gov.co/" target="_blank">https://fosyga-gov.co/</a></li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="container">
+                    <center>
+                        <h1>Servicios</h1>
+                    </center>
+                </div>
+                
+                <div class="container">
+                    <div class="col-md-12">
+                        <p style="font-size: x-large;">Recibirá atención por parte de estudiantes que se encuentran en proceso de formación junto con el acompañamiento de docentes altamente capacitados en diferentes áreas de la odontología.</p>
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div class="container">
+                    <center>
+                        <h1>Tabla de Programas Académicos</h1>
+                    </center>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div style="text-align: center;" class="col-md-4">
+                        <table style="margin: 0 auto; text-align: center;">
+                            <tr>
+                                <td>Pregrado</td>
+                                <td>Estudiantes de iv-viii semestre</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4" class="table-success">Posgrados</td>
+                                <td class="table-success">Periodoncia</td>
+                            </tr>
+                            <tr>
+                                <td>Prostodoncia</td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Endodoncia</td>
+                            </tr>
+                            <tr>
+                                <td>Ortodoncia</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                
+                <div class="container mt-5">
+                    <center>
+                        <h1>Información de servicios</h1>
+                    </center>
+                
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="pregradoHeading">
+                                <h5 class="mb-0">
+                                    <center>
+                                        <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#pregradoCollapse" aria-expanded="false" aria-controls="pregradoCollapse">
+                                            <h3>Pregrado</h3>
+                                        </button>
+                                    </center>
+                                </h5>
+                            </div>
+                            <div id="pregradoCollapse" class="collapse show" aria-labelledby="pregradoHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Estudiantes en formación en odontología general e integral </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <div class="card-header" id="posgradoHeading">
+                                <h5 class="mb-0">
+                                    <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#posgradoCollapse" aria-expanded="false" aria-controls="posgradoCollapse">
+                                            <h3>Posgrados</h3>
+                                        </button></center>
+                                </h5>
+                            </div>
+                            <div id="posgradoCollapse" class="collapse" aria-labelledby="posgradoHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Odontólogos titulados que se encuentran en la formación de un área especifica de la odontología</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <div class="card-header" id="periodonciaHeading">
+                                <h5 class="mb-0">
+                                    <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#periodonciaCollapse" aria-expanded="false" aria-controls="periodonciaCollapse">
+                                            <h3>Periodoncia</h3>
+                                        </button></center>
+                                </h5>
+                            </div>
+                            <div id="periodonciaCollapse" class="collapse" aria-labelledby="periodonciaHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Se realizan algunos procedimientos como:</p>
+                                    <ul>
+                                        <li style="font-size: medium;">Terapia periodontal para el manejo de enfermedades como la gingivitis y la periodontitis.</li>
+                                        <li style="font-size: medium;">Colocación de implantes.</li>
+                                        <li style="font-size: medium;">Aumentos de corona clínicas.</li>
+                                        <li style="font-size: medium;">Frenectomías.</li>
+                                        <li style="font-size: medium;">Gingivectomías.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <div class="card-header" id="prostodonciaHeading">
+                                <h5 class="mb-0">
+                                    <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#prostodonciaCollapse" aria-expanded="false" aria-controls="prostodonciaCollapse">
+                                            <h3>Prostodoncia</h3>
+                                        </button></center>
+                                </h5>
+                            </div>
+                            <div id="prostodonciaCollapse" class="collapse" aria-labelledby="prostodonciaHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Se realizan algunos procedimientos como:</p>
+                                    <ul>
+                                        <li style="font-size: medium;">Prótesis totales.</li>
+                                        <li style="font-size: medium;">Prótesis fijas.</li>
+                                        <li style="font-size: medium;">Coronas individuales.</li>
+                                        <li style="font-size: medium;">Carillas.</li>
+                                        <li style="font-size: medium;">Resinas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <div class="card-header" id="endodonciaHeading">
+                                <h5 class="mb-0">
+                                    <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#endodonciaCollapse" aria-expanded="false" aria-controls="endodonciaCollapse">
+                                            <h3>Endodoncia</h3>
+                                        </button></center>
+                                </h5>
+                            </div>
+                            <div id="endodonciaCollapse" class="collapse" aria-labelledby="endodonciaHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Se realizan algunos procedimientos como:</p>
+                                    <ul>
+                                        <li style="font-size: medium;">Tratamiento convencional de conductos.</li>
+                                        <li style="font-size: medium;">Pulpectomías.</li>
+                                        <li style="font-size: medium;">Cirugía apical.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="card">
+                            <div class="card-header" id="ortodonciaHeading">
+                                <h5 class="mb-0">
+                                    <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#ortodonciaCollapse" aria-expanded="false" aria-controls="ortodonciaCollapse">
+                                            <h3>Ortodoncia</h3>
+                                        </button></center>
+                                </h5>
+                            </div>
+                            <div id="ortodonciaCollapse" class="collapse" aria-labelledby="ortodonciaHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Se realizan algunos procedimientos como:</p>
+                                    <ul>
+                                        <li style="font-size: medium;">Ortopedia.</li>
+                                        <li style="font-size: medium;">Ortodoncia.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" style="padding-top: 60px;">
-                        <div class="col-md-12">
-                            <ol>
-                                <li style="font-size: x-large;">Fotocopia de la cédula de ciudadanía</li><br>
-                                <li style="font-size: x-large;">Certificación Fosyga impresa (Con el fin de identificar el régimen de salud al que pertenece). Puede descargarlo ingresando al siguiente enlace: <a href="https://fosyga-gov.co/" target="_blank">https://fosyga-gov.co/</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                    
-                    <br>
+                
+                    <br><br>
+                
                     <center>
-                        <h1> Servicios </h1>
+                        <h1>Valor de servicios</h1>
                     </center>
-                    
-                    <div class="col-md-12">
-                        <p style="font-size: x-large;">Recibirá atención por parte de estudiantes que se encuentran en proceso de
-                            formación junto con el acompañamiento de docentes altamente capacitados en diferentes áreas de la
-                            odontología.</p>
-                    </div>
-                    <br>
-                    <title>Tabla de Programas Académicos</title>
-                    <style>
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                        }
-                    
-                        table,
-                        th,
-                        td {
-                            border: 1px solid black;
-                        }
-                    
-                        th,
-                        td {
-                            padding: 8px;
-                            text-align: center;
-                        }
-                    
-                        th {
-                            background-color: #f2f2f2;
-                        }
-                    </style>
-                    </head>
+                
+                    <br><br>
+                
                     <div class="row">
-                        <div class="col-md-4">
-                    
-                        </div>
+                        <div class="col-md-4"></div>
                         <div style="text-align: center;" class="col-md-4">
-                            <table style="margin: 0 auto; text-align: center;">
+                            <table class="table table-bordered">
                                 <tr>
-                                    <td>Pregrado</td>
-                                    <td>Estudiantes de iv-viii semestre</td>
+                                    <td>Servicio</td>
+                                    <td>Valor</td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="4" class="table-success">Posgrados</td>
-                                    <td class="table-success">Periodoncia</td>
+                                    <td>Valoración:</td>
+                                    <td>$27.300</td>
                                 </tr>
                                 <tr>
-                                    <td>Prostodoncia</td>
+                                    <td>Historia clínica:</td>
+                                    <td>$27.300</td>
                                 </tr>
                                 <tr>
-                                    <td class="table-success">Endodoncia</td>
+                                    <td>Radiografía panorámica:</td>
+                                    <td>$25.000</td>
                                 </tr>
                                 <tr>
-                                    <td>Ortodoncia</td>
+                                    <td>Juego de radiografías periapicales:</td>
+                                    <td>$57.100</td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="col-md-4">
-                    
-                        </div>
+                        <div class="col-md-4"></div>
                     </div>
+                
+                    <br><br>
+                
+                    <center>
+                        <p>*Estos deberán ser cancelados en la caja que vas a encontrar una vez ingreses en las clínicas.</p>
+                    </center>
+                
+                    <br><br><br><br>
                     
-                    <style>
-                        .btn-uniforme {
-                            width: 250px;
-                            height: 50px;
-                            font-size: 20px;
-                        }
-                    </style>
-                    
-                    <div class="container mt-5">
-                        <center><h1>Información de servicios</h1></center>
-                    
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header" id="pregradoHeading">
-                                    <h5 class="mb-0">
-                                        <center>
-                                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#pregradoCollapse" aria-expanded="false" aria-controls="pregradoCollapse" pulse">
-                                                <h3>Pregrado</h3> 
-                                            </button>
-                                        </center>
-                                        
-                                    </h5>
-                                </div>
-                                <div id="pregradoCollapse" class="collapse show" aria-labelledby="pregradoHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Estudiantes en formación en odontología general e integral </p>
-                                    </div>
-                                </div>
-                            </div>
                         
-                            <div class="card">
-                                <div class="card-header" id="posgradoHeading">
-                                    <h5 class="mb-0">
-                                        <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#posgradoCollapse" aria-expanded="false" aria-controls="posgradoCollapse">
-                                            <h3>Posgrados</h3> 
-                                        </button></center> 
-                                    </h5>
-                                </div>
-                                <div id="posgradoCollapse" class="collapse" aria-labelledby="posgradoHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Odontólogos titulados que se encuentran en la formación de un área especifica de la odontología</p>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="card">
-                                <div class="card-header" id="periodonciaHeading">
-                                    <h5 class="mb-0">
-                                        <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#periodonciaCollapse" aria-expanded="false" aria-controls="periodonciaCollapse">
-                                            <h3>Periodoncia</h3> 
-                                        </button></center> 
-                                    </h5>
-                                </div>
-                                <div id="periodonciaCollapse" class="collapse" aria-labelledby="periodonciaHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Se realizan algunos procedimientos como:</p>
-                                        <ul>
-                                            <li style="font-size: medium;">Terapia periodontal para el manejo de enfermedades como la gingivitis y la periodontitis.</li>
-                                            <li style="font-size: medium;">Colocación de implantes.</li>
-                                            <li style="font-size: medium;">Aumentos de corona clínicas.</li>
-                                            <li style="font-size: medium;">Frenectomías.</li>
-                                            <li style="font-size: medium;">Gingivectomías.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="card">
-                                <div class="card-header" id="prostodonciaHeading">
-                                    <h5 class="mb-0">
-                                        <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#prostodonciaCollapse" aria-expanded="false" aria-controls="prostodonciaCollapse">
-                                            <h3>Prostodoncia</h3> 
-                                        </button></center> 
-                                    </h5>
-                                </div>
-                                <div id="prostodonciaCollapse" class="collapse" aria-labelledby="prostodonciaHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Se realizan algunos procedimientos como:</p>
-                                        <ul>
-                                            <li style="font-size: medium;">Prótesis totales.</li>
-                                            <li style="font-size: medium;">Prótesis fijas.</li>
-                                            <li style="font-size: medium;">Coronas individuales.</li>
-                                            <li style="font-size: medium;">Carillas.</li>
-                                            <li style="font-size: medium;">Resinas.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="card">
-                                <div class="card-header" id="endodonciaHeading">
-                                    <h5 class="mb-0">
-                                        <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#endodonciaCollapse" aria-expanded="false" aria-controls="endodonciaCollapse">
-                                            <h3>Endodoncia</h3> 
-                                        </button></center> 
-                                    </h5>
-                                </div>
-                                <div id="endodonciaCollapse" class="collapse" aria-labelledby="endodonciaHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Se realizan algunos procedimientos como:</p>
-                                        <ul>
-                                            <li style="font-size: medium;">Tratamiento convencional de conductos.</li>
-                                            <li style="font-size: medium;">Pulpectomías.</li>
-                                            <li style="font-size: medium;">Cirugía apical.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="card">
-                                <div class="card-header" id="ortodonciaHeading">
-                                    <h5 class="mb-0">
-                                        <center><button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#ortodonciaCollapse" aria-expanded="false" aria-controls="ortodonciaCollapse">
-                                            <h3>Ortodoncia</h3> 
-                                        </button></center> 
-                                    </h5>
-                                </div>
-                                <div id="ortodonciaCollapse" class="collapse" aria-labelledby="ortodonciaHeading" data-parent="#accordion">
-                                    <div class="card-body">
-                                        <p>Se realizan algunos procedimientos como:</p>
-                                        <ul>
-                                            <li style="font-size: medium;">Ortopedia.</li>
-                                            <li style="font-size: medium;">Ortodoncia.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <br>
-                        <br>
-                    
-                        <center><h1>Valor de servicios</h1></center>
-                    
-                        <br>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-4"></div>
-                            <div style="text-align: center;" class="col-md-4">
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td>Servicio</td>
-                                        <td>Valor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Valoración:</td>
-                                        <td>$27.300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Historia clínica:</td>
-                                        <td>$27.300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Radiografía panorámica:</td>
-                                        <td>$25.000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Juego de radiografías periapicales:</td>
-                                        <td>$57.100</td>
-                                    </tr>
-                                </table>
-                    
-                            </div>
-                            <div class="col-md-4">
-                    
-                            </div>
-                        </div>
-                    
-                        <br>
-                        <br>
-                    
-                        <center><p>*Estos deberán ser cancelados en la caja que vas a encontrar una vez ingreses en las clínicas. </p></center>
-                    
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    
-                        <style>
-                            .fixed-button {
-                                position: fixed;
-                                bottom: 20px;
-                                right: 20px;
-                            }
-                        </style>
                     
                         <div class="container">
                             <div class="row">
@@ -401,9 +404,13 @@
                         </div>
                     </div>
 
-                    <div class="fixed-button">
-                        <button class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo1')">Regresar a la Página Principal</button>
-                    </div>
+
+
+                   <div class="fixed-button">
+    <button class="btn btn-success pulse" onclick="regresarPaginaPrincipal('contenido-nuevo1')" style="display: none;">Regresar a la Página Principal</button>
+</div>
+
+
                 </div>
 
 
@@ -452,35 +459,44 @@
         <br><br>
         <br><br>
         <br><br>
-        <center><h1>¿Qué urgencias requieren atención inmediata?</h1></center>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+          <div class="container mt-5">
+        <!-- Encabezado responsive -->
+        <div class="text-center">
+            <h1>¿Qué urgencias requieren atención inmediata?</h1>
+        </div>
         <br>
         <br>
-        <center>
-        <h3 style="padding-top: 15px;">Existen varias urgencias que deben ser atendidas de inmediato para prevenir complicaciones graves o aliviar el dolor del paciente.</h3>
-
-    </div>
-
-
-    <style>
-        .btn-uniforme {
-            width: 650px; /* Establece el ancho deseado */
-            height: 50px; /* Establece la altura deseada */
-            font-size: 20px; /* Establece el tamaño de fuente deseado */
-        }
-    </style>
-
-    <div class="container mt-5">
-        <center><h1>Algunas de las urgencias más comunes incluyen:</h1></center>
+        <div class="text-center">
+            <h3>Existen varias urgencias que deben ser atendidas de inmediato para prevenir complicaciones graves o aliviar el dolor del paciente.</h3>
+        </div>
+    
+       <div class="container mt-5">
+        <!-- Encabezado responsive -->
+        <div class="text-center">
+            <h1 class="d-none d-md-block">¿Qué urgencias requieren atención inmediata?</h1>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+            <h3>Existen varias urgencias que deben ser atendidas de inmediato para prevenir complicaciones graves o aliviar el dolor del paciente.</h3>
+        </div>
 
         <div id="accordion2">
             <div class="card">
                 <div class="card-header" id="DolorInHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#DolorInCollapse" aria-expanded="false" aria-controls="DolorInCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2" data-toggle="collapse" data-target="#DolorInCollapse" aria-expanded="false" aria-controls="DolorInCollapse">
                                 <h3>Dolor intenso</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="DolorInCollapse" class="collapse show" aria-labelledby="DolorInHeading" data-parent="#accordion2">
@@ -489,15 +505,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="card-header" id="AbscesodentHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#AbscesodentCollapse" aria-expanded="false" aria-controls="AbscesodentCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2" data-toggle="collapse" data-target="#AbscesodentCollapse" aria-expanded="false" aria-controls="AbscesodentCollapse">
                                 <h3>Absceso dental</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="AbscesodentCollapse" class="collapse" aria-labelledby="AbscesodentHeading" data-parent="#accordion2">
@@ -506,15 +522,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="card-header" id="traumadentHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#traumadentCollapse" aria-expanded="false" aria-controls="traumadentCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2" data-toggle="collapse" data-target="#traumadentCollapse" aria-expanded="false" aria-controls="traumadentCollapse">
                                 <h3>Trauma dental</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="traumadentCollapse" class="collapse" aria-labelledby="traumadentHeading" data-parent="#accordion2">
@@ -523,15 +539,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="card-header" id="HemorragiadentHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#HemorragiadentCollapse" aria-expanded="false" aria-controls="HemorragiadentCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2" data-toggle="collapse" data-target="#HemorragiadentCollapse" aria-expanded="false" aria-controls="HemorragiadentCollapse">
                                 <h3>Hemorragia dental</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="HemorragiadentCollapse" class="collapse" aria-labelledby="HemorragiadentHeading" data-parent="#accordion2">
@@ -540,15 +556,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="card-header" id="promtratHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#promtratCollapse" aria-expanded="false" aria-controls="promtratCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2" data-toggle="collapse" data-target="#promtratCollapse" aria-expanded="false" aria-controls="promtratCollapse">
                                 <h3>Problemas con tratamientos dentales previos</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="promtratCollapse" class="collapse" aria-labelledby="promtratHeading" data-parent="#accordion2">
@@ -557,15 +573,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="card-header" id="lessionestejHeading">
                     <h5 class="mb-0">
-                        <center>
-                            <button class="btn btn-success btn-uniforme pulse" data-toggle="collapse" data-target="#lessionestejCollapse" aria-expanded="false" aria-controls="lessionestejCollapse">
+                        <div class="btn-container"> <!-- Agrega el contenedor para centrar -->
+                            <button class="btn btn-success btn-uniforme2 " data-toggle="collapse" data-target="#lessionestejCollapse" aria-expanded="false" aria-controls="lessionestejCollapse">
                                 <h3>Lesiones en los tejidos blandos</h3>
                             </button>
-                        </center>
+                        </div>
                     </h5>
                 </div>
                 <div id="lessionestejCollapse" class="collapse" aria-labelledby="lessionestejHeading" data-parent="#accordion2">
@@ -575,38 +591,40 @@
                 </div>
             </div>
         </div>
-        
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <center><h1>Valores de servicios</h1></center>
-<br>
-<br>
-<div class="row">
-    <div class="col-md-4"></div>
-    <div style="text-align: center;" class="col-md-4">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Servicio</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Costo de la Urgencia:</td>
-                    <td>$27.000</td>
-                </tr>
-                <tr>
-                    <td>Periapical Única:</td>
-                    <td>$6.300</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="text-center">
+            <h1>Valores de servicios</h1>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo de la Urgencia:</td>
+                            <td>$27.000</td>
+                        </tr>
+                        <tr>
+                            <td>Periapical Única:</td>
+                            <td>$6.300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
     </div>
-    <div class="col-md-4"></div>
-</div>
 <br>
 <br>
 
@@ -618,29 +636,36 @@
         </div>
     </div>
 
+    
     <script>
 function mostrarContenidoNuevo(idContenido) {
-    // Oculta el contenido inicial
-    document.getElementById("contenido-inicial").style.display = "none";
-    // Oculta el título "Seleccione una opción:"
-    document.querySelector("h2.text-center").style.display = "none";
-    // Oculta el título "APLICOC"
-    document.querySelector("h1.text-center").style.display = "none";
-    // Muestra el contenido nuevo correspondiente al ID
-    document.getElementById(idContenido).style.display = "block";
-}
+            // Oculta el contenido inicial
+            document.getElementById("contenido-inicial").style.display = "none";
+            // Oculta el título "Seleccione una opción:"
+            document.querySelector("h2.text-center").style.display = "none";
+            // Oculta el título "APLICOC"
+            document.querySelector("h1.text-center").style.display = "none";
+            // Muestra el contenido nuevo correspondiente al ID
+            document.getElementById(idContenido).style.display = "block";
+            // Muestra el botón "Regresar a la Página Principal"
+            document.getElementById("btnRegresar").style.display = "block";
+        }
 
-function regresarPaginaPrincipal(idContenido) {
-    // Oculta el contenido nuevo correspondiente al ID
-    document.getElementById(idContenido).style.display = "none";
-    // Muestra el contenido inicial
-    document.getElementById("contenido-inicial").style.display = "block";
-    // Muestra nuevamente el título "Seleccione una opción:"
-    document.querySelector("h2.text-center").style.display = "block";
-    // Muestra nuevamente el título "APLICOC"
-    document.querySelector("h1.text-center").style.display = "block";
-}
-
+        function regresarPaginaPrincipal() {
+            // Oculta el contenido nuevo correspondiente al ID
+            document.getElementById("contenido-nuevo1").style.display = "none";
+            document.getElementById("contenido-nuevo2").style.display = "none";
+            document.getElementById("contenido-nuevo3").style.display = "none";
+            // Muestra el contenido inicial
+            document.getElementById("contenido-inicial").style.display = "block";
+            // Muestra nuevamente el título "Seleccione una opción:"
+            document.querySelector("h2.text-center").style.display = "block";
+            // Muestra nuevamente el título "APLICOC"
+            document.querySelector("h1.text-center").style.display = "block";
+            // Oculta el botón "Regresar a la Página Principal"
+            document.getElementById("btnRegresar").style.display = "none";
+        }
+    </script>
 
     </script>
 </body>
